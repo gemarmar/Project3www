@@ -148,7 +148,12 @@ public class FileUp extends HttpServlet {
 					details=nameof[2];
 					categ = nameof[1];
 //==============================================================================================
-
+					
+					if(details.equals("")){
+					
+						details = "Give a Discription";
+					
+					}
 
 					File f,fim;
 					fim = new File(filePath+Nameim);
